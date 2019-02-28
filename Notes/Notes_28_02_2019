@@ -1,0 +1,161 @@
+#Date: 28-02-2019
+Concepts:
+	installations
+	Getting stareted
+	creating project
+	Hello world
+	JSX
+	componets
+	types of components
+	import/export
+	defining state
+	state management
+	render() method js conditions
+	
+
+
+check node v
+# Node.js 
+
+To install create-react-app globally
+$ npm i -g create-react-app
+
+To create project folder
+create-react-app
+
+after installing check the installation
+
+
+To create project folder
+$ npx create-react-app weather_app
+
+change directory to root folder:
+
+$ cd weather-app
+
+To install packages
+$ npm install
+
+To start the dev server
+$ npm start
+
+hello world
+
+
+components 2 types
+
+	functional and class based
+
+function funName() {}
+
+Arrow funtion: 
+
+    () => {}
+
+    var myArrowFunc = () => {}
+
+
+class based component:
+
+class Test extends React.Component{
+	render() {
+	   return (
+             <div>TEst</div>
+           )
+        }
+}
+
+export default Test;
+
+
+
+first line is mandatory for every file:
+import React from 'react'
+
+
+importing/exporting two types:
+	1.defaut
+	2.named
+
+	default export:
+		export default ComponentName;
+        named export:
+		export ComponentName;
+
+
+	default import:
+		import ComponentName from 'file path';
+	named import:
+		import { ComponentName } from 'file path';
+
+
+*************
+mandatory method in every component:
+
+render() {
+	//javascript
+
+	return (
+ 	// JSX (html + javascript)
+	)
+}			
+
+
+****It should return only one parent div
+
+JSX: html + js
+
+to diffentiate js we user { }
+ex:
+return (
+      <div>
+        Test component
+        { console.log(30) }
+      </div>
+    )
+
+
+render() will be called each and every time whenever the state updated.
+
+we'll take this advantage and check the data from state conditionally.
+
+
+we defined state object with city, country properties as null values
+we defined input fields
+we defined handlers to recieve the entered data
+
+we updated the state's city, county object with setState({})
+
+checking by consoling in render () method
+
+
+button: onClick 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
